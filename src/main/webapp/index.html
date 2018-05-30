@@ -1,0 +1,1370 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>No Mas Enredos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/semantic.min.css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/coming-soon.min.css" rel="stylesheet">
+    <link href="assets/css/templatemo-style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/Beneficiario.js"></script>
+    <script type="text/javascript" src="js/RegistroCaso.js"></script>
+    <script type="text/javascript" src="js/RegistroDiligencia.js"></script>
+    <script type="text/javascript" src="js/ControllerUsuarios.js"></script>
+
+
+
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header>
+
+
+        <nav id="nav">
+            <ul>
+                <li class="current">
+                    <a href="index.html" style="ba" data-toggle="modal" data-target="#exampleModal2">Login</a>
+                </li>
+                <li>
+                    <a href="" data-toggle="modal" data-target="#registroBenef">registro</a>
+                </li>
+                <li>
+                    <a href="" data-toggle="modal" data-target="#estadoProceso">estado del caso</a>
+                </li>
+                <li>
+                    <a href="" data-toggle="modal" data-target="#inscripcionAbogado">inscripción abogado</a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <i>
+                <img src="images/final.png" style=" width: 300px " alt="" />
+            </i>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+    </section>
+
+    <!-- BOTONES -->
+    <div id="main-wraper">
+        <div id="main" class="container">
+            <div class="row 200%">
+                <div class="12u">
+
+
+                    <!-- Highlight -->
+
+                    <section class="box highlight">
+                        <header>
+                            <h2>somos una alternativa para acceder a
+                                <br> asesoría jurídica</h2>
+
+
+
+                            <!-- Modal registro-->
+                            <div class="modal fade bd-example-modal-lg" id="registroBenef" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="registroBenef" style="color: #0E7177">Formulario de inscripción</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="index.html">
+                                                <form>
+                                                    <center>
+                                                        <h1 for="exampleInputEmail1" style="color: #0E7177">DATOS USUARIO</h1>
+                                                    </center>
+                                                    <hr>
+
+                                                </form>
+
+
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+
+
+
+                                                            <div>
+                                                                <center>
+
+
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-user fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="nombre" type="text" class="form-control" placeholder="Nombres">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-user fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="apellido" type="text" class="form-control" placeholder="Apellidos">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-plus fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="edad" type="text" class="form-control" placeholder="Edad">
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <label>Tipo de documento:</label>
+
+
+
+                                                                    <label class="radio-inline">
+                                                                        <select class="" id="tipoDocumento">
+                                                                            <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+                                                                            <option value="Cédula de extranjería">Cédula de extranjería</option>
+                                                                            <option value="Libreta Militar">Libreta Militar</option>
+                                                                        </select>
+                                                                    </label>
+
+
+
+                                                                    <br>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-credit-card  fa-2x" style=" color: #0E7177"></i>
+
+                                                                            </div>
+                                                                            <input id="cc" type="text" class="form-control" placeholder="Documento">
+                                                                        </div>
+                                                                    </div>
+
+
+
+
+                                                                    <div>
+                                                                        <div>
+
+
+                                                                            <div class="form-group">
+
+
+                                                                                <div class="input-group">
+
+                                                                                    <br>
+                                                                                    <div class="input-group-addon" style="margin-left: 30px; margin-top: 10px; margin-right: 5px">
+
+                                                                                        <i class="fa fa-mobile fa-2x" style=" color: #0E7177"></i>
+                                                                                    </div>
+                                                                                    <input id="celular" type="text" class="form-control" placeholder="Celular">
+
+                                                                                    <br>
+                                                                                    <div class="input-group-addon" style="margin-left: 20px; margin-top: 10px; margin-right: 5px">
+                                                                                        <i class="fa fa-phone fa-2x" style=" color: #0E7177"></i>
+
+                                                                                    </div>
+                                                                                    <input id="telefono" type="text" class="form-control" placeholder="Teléfono">
+                                                                                    <br>
+
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <br>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-at fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="correo" type="text" class="form-control" placeholder="correo electrónico">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <label> Estrato:</label>
+
+
+                                                                    <label class="radio-inline">
+                                                                        <select id="estrato" class="">
+                                                                            <option value="0">0</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa- fa-map-marker fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="direccion" type="text" class="form-control" placeholder="Dirección">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa- fa-map-marker fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="barrio" type="text" class="form-control" placeholder="Barrio">
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <label> La casa donde vive es: </label>
+
+
+
+                                                                    <label class="radio-inline">
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                    <i class="fa fa-home fa-2x" style=" color: #0E7177"></i>
+                                                                                </div>
+                                                                                <label class="radio-inline">
+                                                                                    <select class="" id="tipoCasa">
+                                                                                        <option value="Propia">Propia</option>
+                                                                                        <option value="Arrendada">Arrendada</option>
+                                                                                        <option value="Familiar">Familiar</option>
+                                                                                        <option value="Otro">Otro</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+
+
+
+
+
+                                                                    <label> Localidad: </label>
+
+
+                                                                    <label class="radio-inline">
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                    <em class="fa fa-flag fa-2x" style=" color: #0E7177"></em>
+                                                                                </div>
+                                                                                <label class="radio-inline">
+                                                                                    <select class="" id="localidad">
+                                                                                        <option value="Usaquén">1 - Usaquén</option>
+                                                                                        <option value="Chapinero">2 - Chapinero</option>
+                                                                                        <option value="Santa fe">3 - Santa fe</option>
+                                                                                        <option value="San Cristóbal">4 - San Cristóbal</option>
+                                                                                        <option value="Usme">5 - Usme</option>
+                                                                                        <option value="Tunjuelito">6 - Tunjuelito</option>
+                                                                                        <option value="Bosa">7 - Bosa</option>
+                                                                                        <option value="Kennedy">8 - Kennedy</option>
+                                                                                        <option value="Fontibón">9 - Fontibón</option>
+                                                                                        <option value="Engativá">10 - Engativá</option>
+                                                                                        <option value="Suba">11 - Suba</option>
+                                                                                        <option value="Barrios Unidos">12 - Barrios Unidos</option>
+                                                                                        <option value="Teusaquillo">13 - Teusaquillo</option>
+                                                                                        <option value="Los Mártires">14 - Los Mártires</option>
+                                                                                        <option value="Antonio Nariño">15 - Antonio Nariño</option>
+                                                                                        <option value="Puente Aranda">16 - Puente Aranda</option>
+                                                                                        <option value="Candelaria">17 - Candelaria</option>
+                                                                                        <option value="Rafael Uribe Uribe">18 - Rafael Uribe Uribe</option>
+                                                                                        <option value="Ciudad Bolivar">19 - Ciudad Bolivar</option>
+                                                                                        <option value="Sumapaz">20 - Sumapaz</option>
+                                                                                    </select>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </label>
+
+                                                                </center>
+
+
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="col-lg-6">
+
+
+                                                            <div>
+                                                                <label> Cargue aquí una foto del recibo público de su residencia
+                                                                    donde se identifique su estrato: </label>
+                                                                <br>
+
+
+                                                            </div>
+
+
+
+
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                                <label id="reciboPublico" class="custom-file-label" for="validatedCustomFile">Seleccione un archivo...</label>
+                                                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+
+                                                                <small id="" class="form-text text-muted">Adjunte un archivo jpg o PDF.</small>
+                                                                <br>
+                                                            </div>
+
+
+                                                            <br>
+                                                            <br>
+                                                            <label>
+                                                                <br> Cuántos hijos menores
+                                                                <br> de edad tiene:</label>
+                                                            <label class="radio-inline">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                            <em class="	fa fa-child fa-2x" style=" color: #0E7177"></em>
+                                                                        </div>
+                                                                        <label class="radio-inline">
+                                                                            <select class="" id="nHijos">
+                                                                                <option value_="0">0</option>
+                                                                                <option value_="1">1</option>
+                                                                                <option value_="2">2</option>
+                                                                                <option value_="3">3</option>
+                                                                                <option value_="4">4</option>
+                                                                                <option value_="5">5</option>
+                                                                                <option value_="6">6</option>
+                                                                                <option value_="7">7</option>
+                                                                                <option value_="8">8</option>
+                                                                                <option value_="9">9</option>
+                                                                                <option value_="10">10</option>
+                                                                            </select>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+
+
+                                                            <br>
+                                                            <label> Cómo accede al sistema de salud:</label>
+
+
+
+                                                            <label class="radio-inline">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                            <i class="fa 	fa fa-heartbeat fa-2x" style=" color: #0E7177"></i>
+                                                                        </div>
+                                                                        <label class="radio-inline">
+                                                                            <select class="" id="salud">
+                                                                                <option value="EPS pagada por empleador">EPS pagada por empleador</option>
+                                                                                <option value="EPS pagada por usted">EPS pagada por usted</option>
+                                                                                <option value="Sisben">Sisben</option>
+                                                                                <option value="Ninguna">Ninguna</option>
+                                                                            </select>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+
+
+
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                            <h3 for="exampleInputEmail1" style="color: #0E7177">Información laboral </h3>
+
+                                                            <br>
+
+
+                                                            <label>Trabaja?</label>
+                                                            <center>
+
+
+
+
+
+
+                                                                <p>
+                                                                    <a id="trabajosi" class="btn btn-primary" data-toggle="collapse" href="#hola" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                                        style="background: #21BCC5">
+                                                                        si
+                                                                    </a>
+
+                                                                    <a id="trabajono" class="btn btn-primary" data-toggle="collapse" href="" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                                        style="background: #21BCC5">
+                                                                        no
+                                                                    </a>
+
+
+                                                                </p>
+                                                                <br>
+                                                            </center>
+                                                            <div class="collapse" id="hola">
+                                                                <div class="card card-body">
+
+                                                                    <div>
+
+                                                                        <form>
+
+
+
+
+                                                                            <label>
+                                                                                <br> Cuántas personas depende
+                                                                                <br> de usted económicamente:</label>
+                                                                            <label class="radio-inline">
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                            <em class="	fa fa-users fa-2x" style=" color: #0E7177"></em>
+                                                                                        </div>
+                                                                                        <label class="radio-inline">
+                                                                                            <select class="" id="nPersonas">
+                                                                                                <option value="0">0</option>
+                                                                                                <option value="1">1</option>
+                                                                                                <option value="2">2</option>
+                                                                                                <option value="3">3</option>
+                                                                                                <option value="4">4</option>
+                                                                                                <option value="5">5</option>
+                                                                                                <option value="6">6</option>
+                                                                                                <option value="7">7</option>
+                                                                                                <option value="8">8</option>
+                                                                                                <option value="9">9</option>
+                                                                                                <option value="10">10</option>
+                                                                                            </select>
+
+
+
+
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </label>
+
+
+                                                                            <br>
+                                                                            <label>Cuál es su horario de trabajo:</label>
+                                                                            <label class="radio-inline">
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                            <em class="	fa fa-clock-o fa-2x" style=" color: #0E7177"></em>
+                                                                                        </div>
+                                                                                        <label class="radio-inline">
+                                                                                            <select class="" id="tipoTrabajo">
+                                                                                                <option value="Tiempo completo">Tiempo completo</option>
+                                                                                                <option value="Medio tiempo">Medio tiempo</option>
+                                                                                                <option value="Jornada Diurna">Jornada Diurna</option>
+                                                                                                <option value="Jornada nocturna">Jornada nocturna</option>
+                                                                                                <option value="Jornada Mixta">Jornada Mixta</option>
+                                                                                                <option value="Fines de semana">Fines de semana</option>
+                                                                                                <option value="Por turnos">Por turnos</option>
+                                                                                                <option value="Independiente">Independiente</option>
+                                                                                            </select>
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </label>
+
+                                                                            <br>
+                                                                            <label>Cuáles son sus ingresos:</label>
+                                                                            <br>
+
+
+                                                                            <label class="radio-inline">
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                            <em class="	fa fa-money fa-2x" style=" color: #0E7177"></em>
+                                                                                        </div>
+                                                                                        <label class="radio-inline">
+                                                                                            <select class="" id="ingresos">
+                                                                                                <option value="0 - 1 SMLV">0 - 1 SMLV</option>
+                                                                                                <option value="1 SMLV - 2 SMLV">1 SMLV - 2 SMLV</option>
+                                                                                                <option value="2 SMLV - 3 SMLV">2 SMLV - 3 SMLV</option>
+                                                                                            </select>
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </label>
+
+
+                                                                            <br>
+
+
+                                                                        </form>
+
+
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <br>
+
+
+                                                <h3 for="exampleInputEmail1" style="color: #0E7177">Contacto adicional</h3>
+
+
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                <i class="fa fa-user fa-2x" style=" color: #0E7177"></i>
+                                                            </div>
+                                                            <input id="contactoAdicional" type="text" class="form-control" placeholder="Nombre completo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                <i class="fa fa-phone fa-2x" style=" color: #0E7177"></i>
+                                                            </div>
+                                                            <input id="numTel" type="text" class="form-control" placeholder="Número de contacto">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <label>Le gustaría recibir notificaciones a su número de contacto, via whatsapp?</label>
+                                                <div class="">
+                                                    <div class="">
+                                                        <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                            <i class="fa fa-whatsapp fa-2x" style=" color: #0E7177"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="inline fields">
+
+                                                    <div class="field">
+                                                        <div class="ui radio checkbox">
+                                                            <input type="radio" name="frequency" checked="checked" id="radio1 ">
+                                                            <label>Si</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field">
+                                                        <div class="ui radio checkbox">
+                                                            <input type="radio" name="frequency" id="radio2">
+                                                            <label>No</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+                                            </form>
+                                        </div>
+
+                                        <div class="modal-footer">
+
+                                            <center>
+
+                                                <button type="button" class="btn btn-secondary" style="background: #0E7177" onClick="RegistroUsuario">Enviar</button>
+                                            </center>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- boton caso-->
+
+
+                            <a class="button" style="background: #0E7177; color: aliceblue " data-toggle="modal" data-target="#exampleModal">
+
+                                envianos tu caso
+                            </a>
+
+
+                            <!-- Modal caso-->
+                            <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color: #0E7177">Formulario de inscripción</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form action="index.html" class="templatemo-login-form">
+
+                                                <center>
+                                                    <label for="exampleInputEmail1">Ingrese su numero de cedula para enviarnos su caso:</label>
+                                                </center>
+
+                                                <div>
+                                                    <i class="fa fa-user fa-3x" style="color: #2CB6BF"></i>
+                                                    <br>
+                                                    <center>
+                                                        <div class="ui form">
+                                                            <div class="fields">
+
+                                                                <input type="text" style="margin-left: 30%; margin-right: 30%" placeholder=" Número de identificación">
+                                                            </div>
+                                                        </div>
+                                                    </center>
+
+
+                                                    <center>
+                                                        <p>
+                                                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExamplepps" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                                style="background: #21BCC5">
+                                                                CONSULTAR
+                                                            </a>
+
+
+                                                        </p>
+                                                        <br>
+                                                    </center>
+                                                    <div class="collapse" id="collapseExamplepps">
+                                                        <div class="card card-body">
+
+                                                            <div class="templatemo-content-widget templatemo-login-widget white-bg">
+
+
+                                                                <div class="form-group">
+                                                                    <label for="exampleTextarea">Por qué está solicitando un abogado?</label>
+                                                                    <textarea class="form-control" id="exampleTextarea" rows="15"></textarea>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputFile">adjunte aquí si tiene un archivo adicional</label>
+                                                                    <input type="file" class="form-control-file" id="" aria-describedby="fileHelp">
+                                                                    <small id="" class="form-text text-muted">Adjunte un archivo word.</small>
+                                                                </div>
+
+
+
+
+
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+
+
+                                        </div>
+
+                                        <div class="modal-footer">
+
+                                            <center>
+
+                                                <button type="button" class="btn btn-secondary" style="background: #0E7177">Enviar</button>
+                                            </center>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!--boton proceso-->
+                            <a class="button" style="background:#0E7177; text-decoration-style: dotted" data-toggle="modal" data-target="#estadoProceso">
+
+                                ver proceso
+
+                            </a>
+
+                            <!-- Modal ver proceso-->
+                            <div class="modal fade bd-example-modal-lg" id="estadoProceso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel0"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel0" style="color: #0E7177">PROCESO</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form action="index.html" class="templatemo-login-form">
+
+                                                <center>
+                                                    <label for="exampleInputEmail1">Ingrese su numero de cedula para consultar el estado de su inscripción:</label>
+                                                </center>
+
+                                                <div>
+                                                    <i class="fa fa-user fa-3x" style="color: #2CB6BF"></i>
+                                                    <br>
+                                                    <center>
+                                                        <div class="ui form">
+                                                            <div class="fields">
+
+                                                                <input type="text" style="margin-left: 30%; margin-right: 30%" placeholder=" Número de identificación" id="idUsuario">
+                                                            </div>
+                                                        </div>
+                                                    </center>
+
+
+                                                    <center>
+                                                        <p>
+                                                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExampless" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                                style="background: #21BCC5">
+                                                                CONSULTAR
+                                                            </a>
+
+
+                                                        </p>
+                                                        <br>
+                                                    </center>
+                                                    <div class="collapse" id="collapseExampless">
+                                                        <div class="card card-body">
+
+                                                            <div class="templatemo-content-widget templatemo-login-widget white-bg">
+
+                                                                <form action="index.html" class="templatemo-login-form">
+                                                                    <center>
+                                                                        <label for="exampleInputEmail1">Su inscripción está en:</label>
+                                                                    </center>
+
+
+                                                                    <div class="ui teal progress" data-percent="50" id="example1">
+                                                                        <div class="bar" style="color: aliceblue">50%</div>
+                                                                        <div class="label"></div>
+                                                                    </div>
+
+                                                                    <label id="" class="form-text text-muted">ProBono aceptó su proceso, estamos esperando que un Abogado
+                                                                        tome su caso.</label>
+
+                                                                </form>
+
+
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background: #0E7177">
+                                                    <h6 style="color: aliceblue">Cerrar</h6>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br><br><br><br><br>
+                            <p>con nosotros ahorrará tiempo, dinero y confusiones</p>
+
+
+                            <!-- MODAL login-->
+
+                            <div class="modal fade bd-example-modal-lg" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel2" style="color: #0E7177" ; align="center">login</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form action="index.html" class="templatemo-login-form">
+
+                                                <center>
+                                                    <div>
+                                                        <div class="inline fields">
+                                                            <label>Usted es:</label>
+                                                            <div class="field">
+                                                                <div class="ui radio checkbox">
+                                                                    <input type="radio" name="frequency" checked="checked" id="radio1">
+                                                                    <label>Beneficiario</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <div class="ui radio checkbox">
+                                                                    <input type="radio" name="frequency" id="radio2">
+                                                                    <label>Abogado</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <label for="exampleInputEmail1">Ingrese su numero de cedula:</label>
+                                                </center>
+
+                                                <div>
+                                                    <em class="fa fa-user fa-3x" style="color: #2CB6BF"></em>
+                                                    <br>
+                                                    <center>
+                                                        <div class="ui form">
+                                                            <div class="fields">
+
+                                                                <input type="text" style="margin-left: 30%; margin-right: 30%" placeholder=" Número de identificación" id="ccpswd">
+                                                            </div>
+                                                        </div>
+                                                    </center>
+
+                                                    <center>
+                                                        <p>
+                                                            <a class="btn btn-primary" href="#collapseExamplepps" role="button" style="background: #21BCC5" onClick="Login()">
+                                                                Entrar
+                                                            </a>
+
+
+                                                        </p>
+                                                        <br>
+                                                    </center>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+
+
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- registro abogado-->
+                            <div class="modal fade" id="inscripcionAbogado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel4" style="color: #0995F9">REGISTRO</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form action="index.html" class="templatemo-login-form">
+
+                                                <center>
+                                                    <label for="exampleInputEmail1">Seleccione la identidad a la que pertenece:</label>
+                                                </center>
+
+                                                <div>
+                                                    <em class="fa fa-user fa-3x" style="color: #2CB6BF"></em>
+                                                    <br>
+
+
+                                                    <center>
+                                                        <p>
+                                                            <a class="btn btn-primary" data-toggle="collapse" href="#abogado13" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                                style="background: #21BCC5" onClick="Ingreso()">
+                                                                Casa de Justicia
+                                                            </a>
+                                                            <a class="btn btn-primary" data-toggle="collapse" href="#abogado2" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                                style="background: #21BCC5" onClick="Ingreso()">
+                                                                Consultorio Jurídico
+                                                            </a>
+                                                            <a class="btn btn-primary" data-toggle="collapse" href="#abogadoPB" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                                style="background: #21BCC5" onClick="Ingreso()">
+                                                                Fundación ProBono
+                                                            </a>
+
+
+                                                        </p>
+                                                        <br>
+                                                    </center>
+
+                                                    <!-- collapse de abogado casa de justicia-->
+                                                    <div class="collapse" id="abogado13">
+
+
+                                                        <div class="card card-body">
+
+                                                            <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                                                                <header class="text-center">
+
+                                                                    <h4 id="entidad">Casa De Justicia</h4>
+                                                                </header>
+                                                                <form action="index.html" class="templatemo-login-form">
+                                                                    <br>
+                                                                    <label class="control-label templatemo-block">Seleccione la entidad:</label>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa 	fa fa-home fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <label class="radio-inline">
+                                                                                <select class="form-control" id="nombreEntidad">
+                                                                                    <option value="CiudadBolivar">Ciudad Bolivar</option>
+                                                                                    <option value="Bosa">Bosa</option>
+                                                                                    <option value="Usme">Usme</option>
+                                                                                    <option value="SanCristobal">San Cristóbal</option>
+                                                                                    <option value="Martires">Mártires</option>
+                                                                                    <option value="Chapinero">Chapinero</option>
+                                                                                    <option value="SubaCiudadJardin">Suba Ciudad Jardín</option>
+                                                                                    <option value="BarriosUnidos">Barrios Unidos</option>
+                                                                                    <option value="Kennedy">Kennedy</option>
+                                                                                    <option value="Fontibon">Fontibón</option>
+                                                                                    <option value="Engativa">Engativá</option>
+                                                                                    <option value="SubaPontevedra">Suba Pontevedra</option>
+                                                                                    <option value="Usaquen">Usaquén</option>
+
+                                                                                </select>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+
+
+
+
+
+                                                                    <label class="control-label templatemo-block">Número tarjeta profesional:</label>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-hashtag fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="tarjetaProfesional" type="text" class="form-control" placeholder="Número">
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <label class="control-label templatemo-block">Área de especialización:</label>
+
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa 	fa fa-check fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <label class="radio-inline">
+                                                                                <select class="form-control" id="areaEspecializacion">
+                                                                                    <option value="html">Civil</option>
+                                                                                    <option value="plain">Penal</option>
+                                                                                    <option value="plain">Mercantil</option>
+                                                                                    <option value="plain"> Derecho de familia</option>
+                                                                                    <option value="plain">Administrativo</option>
+                                                                                    <option value="plain">Derecho sucesorio</option>
+                                                                                    <option value="plain">Laboral y seguridad social</option>
+                                                                                </select>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <label class="control-label templatemo-block">Nombre completo:</label>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-user fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="nombreAbog" type="text" class="form-control" placeholder="Nombres">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <label class="control-label templatemo-block">Cédula de ciudadanía:</label>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-credit-card fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="ccAbog" type="text" class="form-control" placeholder="C.C">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <label class="control-label templatemo-block">Correo electrónico:</label>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-at fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="correoAbog" type="text" class="form-control" placeholder="correo@gmail.com">
+                                                                        </div>
+                                                                    </div>
+
+                                                                </form>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- collapse de abogado proBono-->
+                                                    <div class="collapse" id="abogadoPB">
+
+
+                                                        <div class="card card-body">
+
+                                                            <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                                                                <header class="text-center">
+
+                                                                    <h4 id="proBono">Fundación ProBono</h4>
+                                                                </header>
+                                                                <form action="index.html" class="templatemo-login-form">
+                                                                    <br>
+
+
+                                                                    <label class="control-label templatemo-block">Número tarjeta profesional:</label>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-hashtag fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="tarjetaProbono" type="text" class="form-control" placeholder="Número">
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <label class="control-label templatemo-block">Área de especialización:</label>
+
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa 	fa fa-check fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <label class="radio-inline">
+                                                                                <select class="form-control" id="areaProbono">
+                                                                                    <option value="html">Civil</option>
+                                                                                    <option value="plain">Penal</option>
+                                                                                    <option value="plain">Mercantil</option>
+                                                                                    <option value="plain"> Derecho de familia</option>
+                                                                                    <option value="plain">Administrativo</option>
+                                                                                    <option value="plain">Derecho sucesorio</option>
+                                                                                    <option value="plain">Laboral y seguridad social</option>
+                                                                                </select>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <label class="control-label templatemo-block">Nombre completo:</label>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-user fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="nombreProbono" type="text" class="form-control" placeholder="Nombres">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <label class="control-label templatemo-block">Cédula de ciudadanía:</label>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-credit-card fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="ccProbono" type="text" class="form-control" placeholder="C.C">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <label class="control-label templatemo-block">Correo electrónico:</label>
+
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                                <i class="fa fa-at fa-2x" style=" color: #0E7177"></i>
+                                                                            </div>
+                                                                            <input id="correoProbono" type="text" class="form-control" placeholder="correo@gmail.com">
+                                                                        </div>
+                                                                    </div>
+
+                                                                </form>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- collapse de abogado 2-->
+
+                                                    <div class="collapse" id="abogado2">
+                                                        <h4 id="entidad">Consultorio Jurídico</h4>
+
+                                                        <form action="index.html" class="templatemo-login-form">
+
+                                                            <label class="control-label templatemo-block">Nombre de la Universidad:</label>
+
+
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                        <i class="fa 	fa fa-home fa-2x" style=" color: #0E7177"></i>
+                                                                    </div>
+                                                                    <label class="radio-inline">
+                                                                        <select class="form-control" id="universidades">
+                                                                            <option value="html">Universidad Sergio Arboleda</option>
+                                                                            <option value="plain">Universidad del Rosario</option>
+                                                                            <option value="plain">Universidad EAN</option>
+                                                                            <option value="plain">Universidad Nacional de Colombia</option>
+                                                                            <option value="plain">Universidad Central</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <label class="control-label templatemo-block">Cédula de ciudadania:</label>
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                        <i class="fa fa-credit-card fa-2x" style=" color: #0E7177"></i>
+                                                                    </div>
+                                                                    <input id="ccEstu" type="text" class="form-control" placeholder="C.C">
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <label class="control-label templatemo-block">Nombre completo:</label>
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                        <i class="fa fa-user fa-2x" style=" color: #0E7177"></i>
+                                                                    </div>
+                                                                    <input id="nombreEstu" type="text" class="form-control" placeholder="C.C">
+                                                                </div>
+                                                            </div>
+
+
+                                                            <label class="control-label templatemo-block">Correo electrónico:</label>
+
+
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon" style="margin-left: 5px; margin-top: 10px; margin-right: 5px">
+                                                                        <i class="fa fa-at fa-2x" style=" color: #0E7177"></i>
+                                                                    </div>
+                                                                    <input id="correoEstu" type="text" class="form-control" placeholder="correo@gmail.com">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </form>
+
+
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+
+
+                                        </div>
+                                        <div class="modal-footer">
+
+
+
+                                            <center>
+
+                                                <button type="button" class="btn btn-secondary" style="background: #0E7177" onClick="RegistroAbogado">Enviar</button>
+                                            </center>
+
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background: #0995F9">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN BOTONES -->
+
+
+    <!-- CTA -->
+    <section id="cta" class="wrapper">
+        <div class="inner">
+
+            <img src="images/FINN.png" width="600" alt="" />
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container">
+        <center>
+            <h2>nos conectamos con</h2>
+        </center>
+        <img src="images/images.png" width="250" style="margin-right: 2px; margin-left: 40px" alt="" />
+        <img src="images/puntos_vive_digital_colombia_1.gif" width="250" alt="" style="margin-right: 2px" />
+        <img src="images/3.png" width="250" alt="" />
+        <img src="images/just.png" width="300" alt="" />
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>NO MAS ENREDOS</h3>
+                    <p>&nbsp;</p>
+                    <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non
+                        faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan
+                        varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus
+                        vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer
+                        ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                </section>
+                <section>
+                    <h4>team</h4>
+                    <p>&nbsp;</p>
+                    <ul class="alt">
+                        <li>Laura Daniela Ramirez </li>
+                        <li>
+                            <a href="#">Luisa Fernanda Ariza</a>
+                        </li>
+                        <li>
+                            <a href="#">Maicol Steven León</a>
+                        </li>
+                        <li>
+                            <a href="#">María Paula</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>redes sociales</h4>
+                    <h4>&nbsp;</h4>
+                    <ul class="plain">
+                        <li>
+                            <a href="#">
+                                <em class="icon fa-twitter">&nbsp;</em>NoMasEnredos</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon fa-facebook">&nbsp;</i>NoMasEnredos</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon fa-instagram">&nbsp;</i>#NoMasEnredos</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon fa-github">&nbsp;</i>NoMasEnredos</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="copyright">
+                &copy; NoMasEnredos.com
+                <a href="https://unsplash.co">Universidad Sergio Arboleda</a>
+                &copy; 2018
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/semantic.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker12').datetimepicker({
+                inline: true,
+                sideBySide: true
+            });
+        });
+
+
+
+        $('.ui.radio.checkbox')
+            .checkbox()
+            ;
+    </script>
+
+    <script type="text/javascript">
+
+
+        $('.ui.radio.checkbox')
+            .checkbox()
+            ;
+    </script>
+
+    <script type="text/javascript">
+
+        $('#example1').progress();
+    </script>
+
+    <script type="text/javascript">
+
+
+        $('.ui.checkbox')
+            .checkbox()
+            ;	
+    </script>
+
+
+
+
+</body>
+
+</html>
